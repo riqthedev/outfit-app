@@ -1,7 +1,7 @@
 import { model, Schema, Document } from 'mongoose'
 
 interface Clothes {
-    user_id: number;
+    user_id: string;
     image_url: string;
     item_type: string;
     color: string;

@@ -2,7 +2,7 @@ import { model, Schema, Document } from 'mongoose'
 
 
 interface Inspiration {
-    user_id: number,
+    user_id: string,
     image_url: string,
     description: string
 }

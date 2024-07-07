@@ -1,9 +1,9 @@
 import {model, Schema, Document} from 'mongoose'
 
 interface Outfit {
-    user_id: number,
-    clothing_item_id: number,
-    inspo_picture_id: number,
+    user_id: string,
+    clothing_item_id: string,
+    inspo_picture_id: string,
     combination_name: string,
     creation_data: number
 }
