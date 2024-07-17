@@ -4,19 +4,24 @@ import React from 'react'
 
 const navItems = [
     {
-        item: "Home"
+        item: "Home",
+        link: "/"
     },
     
     {
-        item: "Outfits"
+        item: "Outfits",
+        link: "/api/auth/outfits"
     },
 
     {
-        item: "Inspo"
+        item: "Inspo",
+        link: "#"
     },
 
     {
-        item: "Closet"
+        item: "Closet",
+        link: "/api/auth/closet"
+    
     }
 ]
 
@@ -28,7 +33,7 @@ export default function Sidebar() {
                 {navItems.map((item) =>
                 <li key={item.item} className='py-4 flex p-11 font-bold'>
                     <div>
-                        <a  href="#" className='text-sm font-normal text-gray-600'>{item.item}</a>
+                        <a  href={item.link} className='text-sm font-normal text-gray-600'>{item.item}</a>
                     </div>
                 </li>
 
